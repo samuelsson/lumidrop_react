@@ -1,0 +1,25 @@
+@import "../../styles/abstracts";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $header-height;
+  background-color: $white;
+  @include box-shadow(0, 0, 8px, rgba(0, 0, 0, .08));
+
+  .logo {
+    flex: 2;
+    height: 100%;
+    box-sizing: border-box;
+    padding: $padding-small $padding-medium;
+
+    img { height: 100%; }
+  }
+
+  .user-details {
+    flex: 2;
+    padding: 0 $padding-medium;
+    text-align: right;
+  }
+}

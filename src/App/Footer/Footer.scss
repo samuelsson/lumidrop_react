@@ -1,0 +1,10 @@
+@import "../../styles/abstracts";
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding-medium;
+  background-color: $white;
+  @include box-shadow(0, 0, 8px, rgba(0, 0, 0, .08));
+}
