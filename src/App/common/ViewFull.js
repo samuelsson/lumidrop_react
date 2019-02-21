@@ -8,7 +8,7 @@ class ViewFull extends Component {
         return (
             <div className="wrapper-full">
                 <Header/>
-                <SidebarLeft/>
+                <SidebarLeft content={this.props.sidebarLeftContent}/>
                 <section className="main">
                     {this.props.children}
                 </section>

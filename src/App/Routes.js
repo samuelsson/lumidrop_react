@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
 
-import Home from './Home';
+import Home from './sections/Home';
 import Settings from './sections/Settings/Settings';
+import PageNotFound from './sections/PageNotFound';
 
 class Routes extends Component {
     render() {
@@ -10,6 +11,7 @@ class Routes extends Component {
             <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route path="/settings" component={Settings}/>
+                <Route path="*" component={PageNotFound}/>
             </Switch>
         )
     }

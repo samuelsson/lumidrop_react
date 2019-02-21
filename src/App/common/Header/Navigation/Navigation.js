@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './Navigation.scss'
 
@@ -9,10 +9,10 @@ class Navigation extends Component {
             <nav className="menu">
                 <ul className="main-links">
                     <li className="nav-item" >
-                        <Link to="/">Home</Link>
+                        <NavLink to="/">Home</NavLink>
                     </li>
                     <li className="nav-item" >
-                        <Link to="/settings">Settings</Link>
+                        <NavLink to="/settings">Settings</NavLink>
                     </li>
                 </ul>
             </nav>

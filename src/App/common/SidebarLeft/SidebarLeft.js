@@ -6,7 +6,7 @@ class SidebarLeft extends Component {
     render() {
         return (
             <aside className="sidebar-left">
-                Left sidebar :)
+                {this.props.content}
             </aside>
         );
     }
