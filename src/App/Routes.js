@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
 
 import Home from './Home';
-import Settings from './Settings';
+import Settings from './sections/Settings/Settings';
 
 class Routes extends Component {
     render() {
