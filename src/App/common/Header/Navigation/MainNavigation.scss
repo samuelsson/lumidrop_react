@@ -20,6 +20,11 @@ nav {
     &:hover { opacity: 1; }
   }
 
+  .active {
+    opacity: 1;
+    color: $blue;
+  }
+
   .main-links {
     text-transform: uppercase;
 

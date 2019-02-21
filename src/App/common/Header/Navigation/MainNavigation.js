@@ -9,7 +9,7 @@ class MainNavigation extends Component {
             <nav className="menu">
                 <ul className="main-links">
                     <li className="nav-item" >
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/home">Home</NavLink>
                     </li>
                     <li className="nav-item" >
                         <NavLink to="/settings">Settings</NavLink>
