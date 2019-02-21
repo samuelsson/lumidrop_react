@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Logo from './Logo';
-import Navigation from './Navigation/Navigation';
+import MainNavigation from './Navigation/MainNavigation';
 import UserDetails from './UserDetails';
 
 import './Header.scss'
@@ -10,7 +10,7 @@ class Header extends Component {
         return (
             <header>
                 <Logo/>
-                <Navigation/>
+                <MainNavigation/>
                 <UserDetails/>
             </header>
         );

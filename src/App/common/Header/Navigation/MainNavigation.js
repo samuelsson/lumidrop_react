@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import './Navigation.scss'
+import './MainNavigation.scss'
 
-class Navigation extends Component {
+class MainNavigation extends Component {
     render() {
         return (
             <nav className="menu">
@@ -20,4 +20,4 @@ class Navigation extends Component {
     }
 }
 
-export default Navigation;
+export default MainNavigation;

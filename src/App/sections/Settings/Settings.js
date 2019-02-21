@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import ViewFull from '../../common/ViewFull';
 import General from './General';
-import SettingsNavigation from './SettingsNavigation';
+import SettingsNavigation from './Navigation/SettingsNavigation';
 
 class Settings extends Component {
     render() {

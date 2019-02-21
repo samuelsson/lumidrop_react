@@ -1,10 +1,8 @@
 @import "../../../styles/abstracts";
 
 .sidebar-left {
-  display: block;
   width: $sidebar-left-width;
   height: 100%;
-  padding: $padding-medium;
   background-color: $very-light-blue-gray;
   @include box-shadow(1px, 0, 0, rgba(0, 0, 0, .075));
 }
