@@ -1,0 +1,34 @@
+@import "../../../../styles/abstracts";
+
+.sidebar-left-navigation {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: block;
+    list-style: none;
+  }
+
+  .nav-item {
+    padding: $padding-tiny $padding-medium;
+    color: $dark-blue;
+    text-transform: capitalize;
+
+    &:hover {
+      background-color: $light-blue-gray;
+    }
+  }
+
+  .active li {
+    background-color: $light-blue-gray;
+    @include box-shadow(5px, 0, 0, $blue, true);
+  }
+
+  .nav-header {
+    margin: $padding-small $padding-small;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: $blue-gray;
+    text-transform: uppercase;
+  }
+}
