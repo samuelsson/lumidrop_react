@@ -13,7 +13,7 @@ class Navigation extends Component {
         ];
 
         return (
-            <div className="settings-navigation" style={{'padding-top': '25px'}}>
+            <div className="settings-navigation" style={{paddingTop: '25px'}}>
                 {<SidebarLeftNavigation navItems={nav} />}
             </div>
         );
