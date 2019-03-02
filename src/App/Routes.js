@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from "react-router-dom";
 
-import Home from './sections/Home';
-import Settings from './sections/Settings/Settings';
-import PageNotFound from './sections/PageNotFound';
+import Home from './pages/Home';
+import Settings from './pages/Settings/Settings';
+import PageNotFound from './pages/PageNotFound';
 
 class Routes extends Component {
     render() {
