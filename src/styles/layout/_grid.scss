@@ -52,3 +52,18 @@
         "sidebar-left main"
         "sidebar-left footer";
 }
+
+.wrapper-clean {
+    @extend %default-grid;
+
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+            "main"
+            "footer";
+
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
