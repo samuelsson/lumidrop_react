@@ -1,6 +1,6 @@
 @import "../../../styles/abstracts";
 
-.login-wrapper {
+.register-wrapper {
   min-width: 100%;
   background-color: $white;
   border-radius: 3px;
@@ -32,8 +32,8 @@
 }
 
 @media (min-width: 768px) {
-  .login-wrapper {
-    min-width: 350px;
+  .register-wrapper {
+    min-width: 450px;
     margin: $padding-medium;
   }
 }
