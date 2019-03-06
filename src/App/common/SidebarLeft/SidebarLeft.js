@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './SidebarLeft.scss'
 
-class SidebarLeft extends Component {
-    render() {
-        return (
-            <aside className="sidebar-left">
-                {this.props.content}
-            </aside>
-        );
-    }
-}
+const SidebarLeft = ({ content }) => {
+    return (
+        <aside className="sidebar-left">
+            {content}
+        </aside>
+    );
+};
 
 export default SidebarLeft;
