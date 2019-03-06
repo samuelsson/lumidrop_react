@@ -4,8 +4,8 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import Home from './pages/Home';
 import Settings from './pages/Settings/Settings';
 import PageNotFound from './pages/PageNotFound';
-import Login from './pages/Login/Login';
-import Register from './pages/Register/Register';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 const Routes = () => {
     return (

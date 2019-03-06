@@ -1,7 +1,7 @@
 @import "../../../styles/abstracts";
 
-.register-wrapper {
-  min-width: 100%;
+.form-box {
+  width: 100%;
   background-color: $white;
   border-radius: 3px;
   @include box-shadow(0, 10px, 35px, rgba(0, 0, 0, 0.15));
@@ -19,7 +19,11 @@
     }
   }
 
-  .content { padding: $padding-medium; }
+  .content {
+    padding: $padding-medium;
+
+    input { margin-bottom: $padding-medium; }
+  }
 
   .footer {
     padding: $padding-medium;
@@ -32,8 +36,8 @@
 }
 
 @media (min-width: 768px) {
-  .register-wrapper {
-    min-width: 450px;
+  .form-box {
+    width: 450px;
     margin: $padding-medium;
   }
 }
