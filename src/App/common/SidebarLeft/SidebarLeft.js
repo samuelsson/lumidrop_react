@@ -1,10 +1,10 @@
 import React from 'react';
 
-import styles from './SidebarLeft.module.scss'
+import './SidebarLeft.scss'
 
 const SidebarLeft = ({ content, visible }) => {
     return (
-        <aside className={`${styles.sidebarLeft} ${visible ? styles.visible : styles.hidden}`}>
+        <aside className={`sidebar-left ${visible ? 'sidebar-left-visible' : 'sidebar-left-hidden'}`}>
             {content}
         </aside>
     );

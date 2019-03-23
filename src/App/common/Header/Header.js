@@ -5,10 +5,11 @@ import UserDetails from './UserDetails';
 
 import './Header.scss'
 
-const Header = () => {
+const Header = ({ toggleSidebar }) => {
     return (
         <header>
             <Logo/>
+            <button onClick={toggleSidebar}>Toggle Sidebar</button>
             <MainNavigation/>
             <UserDetails/>
         </header>

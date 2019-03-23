@@ -11,10 +11,15 @@ class ViewFull extends Component {
         }
     }
 
+    onSidebarLeftToggle = () => {
+        this.setState({ sidebarVisible: !this.state.sidebarVisible });
+        console.log(this.state.sidebarVisible);
+    };
+
     render() {
         return (
             <div className="wrapper-full">
-                <Header/>
+                <Header toggleSidebar={this.onSidebarLeftToggle}/>
                 <SidebarLeft content={this.props.sidebarLeftContent} visible={this.state.sidebarVisible}/>
                 <section className="main">
                     {this.props.children}
