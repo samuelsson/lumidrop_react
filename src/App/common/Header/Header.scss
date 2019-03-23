@@ -8,14 +8,21 @@ header {
   background-color: $white;
   @include box-shadow(0, 0, 8px, rgba(0, 0, 0, .08));
 
-  .logo {
+  .left-container {
+    display: flex;
+    align-items: center;
     flex: 2;
     height: 100%;
-    box-sizing: border-box;
-    padding: $padding-small $padding-medium;
 
-    img { height: 100%; }
+    .logo {
+      height: 100%;
+      box-sizing: border-box;
+      padding: $padding-small $padding-medium;
+
+      img { height: 100%; }
+    }
   }
+
 
   .user-details {
     flex: 2;

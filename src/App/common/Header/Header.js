@@ -6,10 +6,14 @@ import UserDetails from './UserDetails';
 import './Header.scss'
 
 const Header = ({ toggleSidebar }) => {
+    const hasSidebarLeft = !!toggleSidebar;
+
     return (
         <header>
-            <Logo/>
-            <button onClick={toggleSidebar}>Toggle Sidebar</button>
+            <div className="left-container">
+                <Logo/>
+                {hasSidebarLeft && <button onClick={toggleSidebar}>Toggle Sidebar</button>}
+            </div>
             <MainNavigation/>
             <UserDetails/>
         </header>
