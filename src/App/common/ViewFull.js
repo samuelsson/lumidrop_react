@@ -13,7 +13,6 @@ class ViewFull extends Component {
 
     onSidebarLeftToggle = () => {
         this.setState({ sidebarVisible: !this.state.sidebarVisible });
-        console.log(this.state.sidebarVisible);
     };
 
     render() {
