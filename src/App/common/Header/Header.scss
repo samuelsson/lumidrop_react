@@ -21,6 +21,12 @@ header {
 
       img { height: 100%; }
     }
+
+    .sidebar-toggle-button:hover {
+      user-select: none;
+      color: darken($text-color, 20%);
+      cursor: pointer;
+    }
   }
 
 
