@@ -1,0 +1,21 @@
+kind: pipeline
+name: development
+when:
+  event: [ push ]
+  branch: [ master ]
+
+clone:
+  git:
+    image: plugins/git
+    pull: true
+
+steps:
+  - name: build
+    image: node
+    commands:
+      - npm install
+
+  - name: test
+    image: node
+    commands:
+      - CI=true npm test
