@@ -7,11 +7,11 @@ import 'normalize.css'
 import './styles/main.scss';
 
 import App from './containers/App/App';
-import { toggleSidebarLeft } from './reducers/sidebarLeftReducer';
+import rootReducer from './reducers/rootReducer';
 import * as serviceWorker from './serviceWorker';
 
 // Atm there's only one reducer, but later on this will be changed to a rootReducer.
-const store = createStore(toggleSidebarLeft);
+const store = createStore(rootReducer);
 
 const root = (
     <Provider store={ store }>

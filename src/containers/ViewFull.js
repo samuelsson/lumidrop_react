@@ -8,7 +8,7 @@ import { toggleSidebarLeftVisibility } from '../actions';
 
 const mapStateToProps = state => {
     return {
-        sidebarLeftVisible: state.sidebarLeftVisible
+        sidebarLeftVisible: state.toggleSidebarLeft.sidebarLeftVisible
     }
 };
 
