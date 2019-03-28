@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import ErrorBoundary from './ErrorBoundary';
 import Header from '../common/Header/Header';
 import Footer from '../common/Footer/Footer';
 import SidebarLeft from '../common/SidebarLeft/SidebarLeft';
@@ -25,11 +24,9 @@ class ViewFull extends Component {
             <div className="wrapper-full">
                 <Header toggleSidebar={this.props.onSidebarLeftToggle}/>
                 <SidebarLeft content={this.props.sidebarLeftContent} visible={this.props.sidebarLeftVisible}/>
-                <ErrorBoundary>
-                    <section className="main">
-                        {this.props.children}
-                    </section>
-                </ErrorBoundary>
+                <section className="main">
+                    {this.props.children}
+                </section>
                 <Footer/>
             </div>
         );
