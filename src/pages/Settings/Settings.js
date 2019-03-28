@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import ViewFull from '../../common/ViewFull';
+import ViewFull from '../../containers/ViewFull';
 import Navigation from './Navigation';
 
 import General from './General';

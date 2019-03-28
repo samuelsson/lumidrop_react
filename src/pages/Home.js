@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ViewDefault from '../common/ViewDefault';
+import ViewDefault from '../containers/ViewDefault';
 
 class Home extends Component {
     render() {

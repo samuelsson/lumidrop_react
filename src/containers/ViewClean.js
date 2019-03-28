@@ -1,12 +1,10 @@
 import React from 'react';
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
+import Footer from '../common/Footer/Footer';
 import ErrorBoundary from './ErrorBoundary';
 
-const ViewDefault = ({ children }) => {
+const ViewClean = ({ children }) => {
     return (
-        <div className="wrapper">
-            <Header/>
+        <div className="wrapper-clean">
             <ErrorBoundary>
                 <section className="main">
                     {children}
@@ -17,4 +15,4 @@ const ViewDefault = ({ children }) => {
     );
 };
 
-export default ViewDefault;
+export default ViewClean;

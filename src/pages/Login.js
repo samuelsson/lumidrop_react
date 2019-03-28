@@ -1,5 +1,5 @@
 import React from 'react';
-import ViewClean from '../common/ViewClean';
+import ViewClean from '../containers/ViewClean';
 
 import * as Button from '../common/Button/Button';
 import FormBox from '../common/FormBox/FormBox';
