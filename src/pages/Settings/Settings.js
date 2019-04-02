@@ -4,7 +4,7 @@ import ViewFull from '../../containers/ViewFull';
 import Navigation from './Navigation';
 
 import General from './General';
-import Account from './Account';
+import Users from './Users';
 import Security from './Security';
 
 class Settings extends Component {
@@ -16,7 +16,7 @@ class Settings extends Component {
                 <Switch>
                     <Redirect exact path={match.path} to={`${match.path}/general`}/>
                     <Route path={`${match.path}/general`} component={General}/>
-                    <Route path={`${match.path}/account`} component={Account}/>
+                    <Route path={`${match.path}/users`} component={Users}/>
                     <Route path={`${match.path}/security`} component={Security}/>
                     <Redirect path={`${match.path}/*`} to={match.path}/>
                 </Switch>

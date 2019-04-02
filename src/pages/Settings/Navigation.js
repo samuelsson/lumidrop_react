@@ -7,7 +7,7 @@ class Navigation extends Component {
 
         const nav = [
             {url: match.url + '/general', name: 'general'},
-            {url: match.url + '/account', name: 'account'},
+            {url: match.url + '/users', name: 'users'},
             {type: 'header', name: 'admin'},
             {url: match.url + '/security', name: 'security'}
         ];

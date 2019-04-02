@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunkMiddleware from 'redux-thunk';
 
 import 'normalize.css'
 import './styles/main.scss';
@@ -11,7 +12,7 @@ import rootReducer from './reducers/rootReducer';
 import * as serviceWorker from './serviceWorker';
 
 // Atm there's only one reducer, but later on this will be changed to a rootReducer.
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
 
 const root = (
     <Provider store={ store }>
